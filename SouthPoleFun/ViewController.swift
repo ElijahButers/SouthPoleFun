@@ -64,6 +64,7 @@ class ViewController: UIViewController {
   func loadWalkAnimation() {
     
     penguin.animationImages = walkFrames
+    penguin.animationDuration = animationDuration / 3
     
   }
   
