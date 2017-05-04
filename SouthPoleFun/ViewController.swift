@@ -65,6 +65,7 @@ class ViewController: UIViewController {
     
     penguin.animationImages = walkFrames
     penguin.animationDuration = animationDuration / 3
+    penguin.animationRepeatCount = 3
     
   }
   
