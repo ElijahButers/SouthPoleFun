@@ -63,6 +63,8 @@ class ViewController: UIViewController {
   
   func loadWalkAnimation() {
     
+    penguin.animationImages = walkFrames
+    
   }
   
   func loadSlideAnimation() {
