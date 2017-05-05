@@ -59,6 +59,7 @@ class ViewController: UIViewController {
     //setup the animation
     penguinY = penguin.frame.origin.y
     
+    loadWalkAnimation()
   }
   
   func loadWalkAnimation() {
