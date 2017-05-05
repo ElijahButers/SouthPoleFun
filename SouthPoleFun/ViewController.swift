@@ -76,6 +76,7 @@ class ViewController: UIViewController {
   
   @IBAction func actionLeft(_ sender: AnyObject) {
     
+    isLookingRight = false
   }
   
   @IBAction func actionRight(_ sender: AnyObject) {
