@@ -27,7 +27,13 @@ class ViewController: UIViewController {
   @IBOutlet var penguin: UIImageView!
   @IBOutlet var slideButton: UIButton!
   
-  var isLookingRight: Bool = true
+  var isLookingRight: Bool = true {
+    didSet {
+        let xScale: CGFloat = isLookingRight ? 1 : -1
+        penguin.transform = CGAffineTransform(scaleX: xScale, y: 1)
+        slideButton.transform = penguin.transform
+        }
+    }
   var penguinY: CGFloat!
   
   var walkSize: CGSize!
