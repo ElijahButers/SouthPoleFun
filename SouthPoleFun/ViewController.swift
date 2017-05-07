@@ -83,6 +83,8 @@ class ViewController: UIViewController {
   @IBAction func actionLeft(_ sender: AnyObject) {
     
     isLookingRight = false
+    
+    penguin.startAnimating()
   }
   
   @IBAction func actionRight(_ sender: AnyObject) {
