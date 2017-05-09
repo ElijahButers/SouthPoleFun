@@ -84,6 +84,10 @@ class ViewController: UIViewController {
     
     isLookingRight = false
     
+    UIView.animate(withDuration: animationDuration, delay: 0.0, options: .curveEaseOut, animations: {
+            self.penguin.center.x -= self.walkSize.width
+        } , completion: nil)
+    
     penguin.startAnimating()
   }
   
