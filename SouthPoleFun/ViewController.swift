@@ -107,6 +107,8 @@ class ViewController: UIViewController {
   
   @IBAction func actionSlide(_ sender: AnyObject) {
     
+    loadSlideAnimation()
+    penguin.startAnimating()
   }
 }
 
