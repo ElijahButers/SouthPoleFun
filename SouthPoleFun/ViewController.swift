@@ -78,6 +78,10 @@ class ViewController: UIViewController {
   
   func loadSlideAnimation() {
     
+    penguin.animationImages = slideFrames
+    penguin.animationDuration = animationDuration
+    penguin.animationRepeatCount = 1
+    
   }
   
   @IBAction func actionLeft(_ sender: AnyObject) {
