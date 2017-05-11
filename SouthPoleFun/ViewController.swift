@@ -109,6 +109,12 @@ class ViewController: UIViewController {
     
     penguin.frame = CGRect(x: penguin.frame.origin.x, y: penguinY + (walkSize.height - slideSize.height ), width: slideSize.width, height: slideSize.height)
     
+    UIView.animate(withDuration: animationDuration - 0.02, delay: 0.0, options: .curveEaseOut, animations: {
+        self.penguin.center.x += self.isLookingRight ? self.slideSize.width : -self.slideSize.width
+    }, completion: {_ in
+        //
+    })
+    
     loadSlideAnimation()
     penguin.startAnimating()
   }
