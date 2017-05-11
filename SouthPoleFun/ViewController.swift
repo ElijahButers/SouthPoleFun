@@ -107,6 +107,8 @@ class ViewController: UIViewController {
   
   @IBAction func actionSlide(_ sender: AnyObject) {
     
+    penguin.frame = CGRect(x: penguin.frame.origin.x, y: penguinY + (walkSize.height - slideSize.height ), width: slideSize.width, height: slideSize.height)
+    
     loadSlideAnimation()
     penguin.startAnimating()
   }
