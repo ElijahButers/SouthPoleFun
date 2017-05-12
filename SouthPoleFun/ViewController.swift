@@ -112,7 +112,8 @@ class ViewController: UIViewController {
     UIView.animate(withDuration: animationDuration - 0.02, delay: 0.0, options: .curveEaseOut, animations: {
         self.penguin.center.x += self.isLookingRight ? self.slideSize.width : -self.slideSize.width
     }, completion: {_ in
-        //
+        self.penguin.frame = CGRect(x: self.penguin.frame.origin.x, y: self.penguinY, width: self.walkSize.width, height: self.walkSize.height)
+        self.loadWalkAnimation()
     })
     
     loadSlideAnimation()
